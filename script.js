@@ -38,5 +38,16 @@ function stopTimer() {
   clearInterval(timer);
 }
 
+// Function to reset the timer to 00:00:00
+function resetTimer() {
+  clearInterval(timer);
+  seconds = 0;
+  minutes = 0;
+  hours = 0;
+  updateDisplay();
+}
+
+//Event Listerners for the particular function to be performed
 startBtn.addEventListener("click", startTimer);
 stopBtn.addEventListener("click", stopTimer);
+resetBtn.addEventListener("click", resetTimer);
