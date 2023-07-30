@@ -16,3 +16,21 @@ function updateDisplay() {
 
   display.textContent = `${displayHours}:${displayMinutes}:${displaySeconds}`;
 }
+
+// Function to start the timer
+function startTimer() {
+  timer = setInterval(() => {
+    seconds++;
+    if (seconds >= 60) {
+      seconds = 0;
+      minutes++;
+      if (minutes >= 60) {
+        minutes = 0;
+        hours++;
+      }
+    }
+    updateDisplay();
+  }, 1000);
+}
+
+startBtn.addEventListener("click", startTimer);
