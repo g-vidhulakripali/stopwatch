@@ -1,6 +1,6 @@
 # stopwatch
 
-Simple Javascript project for Stopwatch
+Simple Javascript project for Stopwatch!.
 
 # Stopwatch
 
