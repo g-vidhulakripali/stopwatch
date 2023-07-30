@@ -33,4 +33,10 @@ function startTimer() {
   }, 1000);
 }
 
+// Function to stop the timer without resetting the values
+function stopTimer() {
+  clearInterval(timer);
+}
+
 startBtn.addEventListener("click", startTimer);
+stopBtn.addEventListener("click", stopTimer);
